@@ -1,0 +1,70 @@
+{"h": "baa89a1122e75825", "verdict": "GitHub repository page for react (source file ReactJsXElement.js)", "confidence": "high", "mode": "gui", "ocr_text": "react / react\nFork 51.3k\nStar 249k\nreact / packages / react / src / jsx / ReactJsXElement.js\nIssues 854\nPull requests 482"}
+{"h": "bb38a03df62a6ead", "verdict": "bar chart: Tickets Done vs Open by Team", "confidence": "high", "mode": "photo", "ocr_text": "Tickets Done vs Open by Team\nDone\nOpen\nTeam A\nTeam B\nTeam C"}
+{"h": "bba8d651b4698261", "verdict": "uncertain + best guess: outdoor scene", "confidence": "low", "mode": "photo", "ocr_text": "cc-nc-sa\nEduardo Amorim"}
+{"h": "bbb5f0c7d5f1e70b", "verdict": "uncertain + best guess: blank dark screen", "confidence": "low", "mode": "gui", "ocr_text": ""}
+{"h": "be4c313583fa9520", "verdict": "Stack Overflow questions page", "confidence": "high", "mode": "photo", "ocr_text": "24,140,627 questions\nMove solution from VS2010 to VS2017\nHow can I move a solution from Visual Studio 2010 to Visual Studio 2017?\nvisual-studio\nmigration"}
+{"h": "be5066b17da11cd2", "verdict": "uncertain + best guess: emblem or badge icon", "confidence": "low", "mode": "photo", "ocr_text": ""}
+{"h": "be614decc95525a2", "verdict": "scatter plot: Height vs Weight Sample n=40", "confidence": "high", "mode": "photo", "ocr_text": "Height vs Weight Sample n=40\nWeight kg\nHeight cm"}
+{"h": "bfa06283daf63025", "verdict": "uncertain + best guess: vegetation close-up", "confidence": "low", "mode": "photo", "ocr_text": "cc"}
+{"h": "c0c12f2fb0079fb0", "verdict": "uncertain + best guess: waterscape", "confidence": "low", "mode": "photo", "ocr_text": "cc-nc-sa\nseanavigatorsson"}
+{"h": "c312c7ef06db9d4f", "verdict": "network topology diagram with legend", "confidence": "high", "mode": "photo", "ocr_text": "IRE\nlegend\nRouter\nLink (1Mbps)\nLink (56Kbps)"}
+{"h": "c3dac74a2fd37327", "verdict": "BIOS setup screen", "confidence": "high", "mode": "gui", "ocr_text": "Hard Disk\nUSB\nMain\nProcessor\nMemory\nDVD / Blu Ray"}
+{"h": "c4468c3623622201", "verdict": "Programiz Python online compiler page", "confidence": "high", "mode": "gui", "ocr_text": "Programiz\nPython Online Compiler\nmain.py\nprint\"Start small. Ship something.\""}
+{"h": "c5220ee8a84d5c8b", "verdict": "Codeberg sign in page", "confidence": "high", "mode": "gui", "ocr_text": "Codeberg has changed its Terms of Use. View complete changes.\nSign in\nUsername or email address\nPassword *"}
+{"h": "c6d1ef134baa4a55", "verdict": "flow diagram of meta-analysis study screening (PRISMA)", "confidence": "high", "mode": "gui", "ocr_text": "Studies identified by database search (n=34 581)\n198 eligible studies included in quantitative synthesis (Meta-analysis)\n50 on carrot/a-carotene (FFQ) intakes (Prospective studies)"}
+{"h": "c825b3d3926a51f3", "verdict": "food product packaging for crab croquette", "confidence": "high", "mode": "photo", "ocr_text": "Crab Croquette\n100% Red-crab from Sokcho, Komea\nCrab while the leg quarter with whole"}
+{"h": "c8e2855ca5ece619", "verdict": "diagram of Rust iterator traits", "confidence": "high", "mode": "gui", "ocr_text": "Iterator\nIntoIterator\nnext()\ninto_iter()\nHashMap\nHashSet"}
+{"h": "ca56a3ac5cf3b4b8", "verdict": "Google sign in page for Gmail", "confidence": "high", "mode": "gui", "ocr_text": "Google\nSign in\nwith your Google Account to continue to Gmail.\nEmail or phone\nForgot email?\nCreate account"}
+{"h": "cb5884c7a6b661fc", "verdict": "Render sign in page", "confidence": "high", "mode": "gui", "ocr_text": "Sign In to Render\nGitHub\nGitLab\nBitbucket\nGoogle\nEmail\nyour@email.com"}
+{"h": "cb5eb87b49ef970e", "verdict": "circuit schematic of a vacuum tube amplifier", "confidence": "high", "mode": "gui", "ocr_text": "EL34\n12AX7\n30W\n373V\nHT\n12uF/350V"}
+{"h": "cb8ba4735706e58b", "verdict": "uncertain + best guess: outdoor landscape scene", "confidence": "low", "mode": "photo", "ocr_text": "cc"}
+{"h": "cbbcc9c848806d4e", "verdict": "team chat messages about a software eval run", "confidence": "medium", "mode": "photo", "ocr_text": "manifest updated, 96 files total\neval tonight 22:00 UTC, don't merge after 21:00\ngui split re-run: mean 0.91 0.93\nsuild #4822 passed in 3m 41s"}
+{"h": "cc028f871e10cb94", "verdict": "Worldometer countries by population page", "confidence": "high", "mode": "gui", "ocr_text": "worldometer\nCountries in the world by population (2026)\nCountry (or dependency)\nPopulation\n2026"}
+{"h": "cc094d0c02ddf79c", "verdict": "Proton Mail sign in page", "confidence": "high", "mode": "gui", "ocr_text": "Proton Mail\nSign in\nTo continue to Proton Mail\nEmail or username\nNew to Proton? Create account"}
+{"h": "cc2948bb5398b988", "verdict": "flowchart for computing an average of five numbers", "confidence": "high", "mode": "gui", "ocr_text": "Start\nInteger currentNumber, currentSum, average, i\nInput currentNumber\naverage = currentSum/5\nOutput \"Average is: \" & average"}
+{"h": "cd1914c7be8002ac", "verdict": "text sign warning of electrical hazard", "confidence": "high", "mode": "photo", "ocr_text": "SIGN: electrical hazard\nCAUTION\nHIGH VOLTAGE\nAUTHORIZED STAFF ONLY"}
+{"h": "cf0ff9b95466320b", "verdict": "uncertain + best guess: animal", "confidence": "low", "mode": "photo", "ocr_text": "cc-sa"}
+{"h": "cf338b6ed677113d", "verdict": "uncertain + best guess: animal", "confidence": "low", "mode": "photo", "ocr_text": "GIORGIO FROM ITALY\ncc-nc-sa"}
+{"h": "d06660849beb9b7d", "verdict": "uncertain + best guess: mountain landscape", "confidence": "low", "mode": "photo", "ocr_text": ""}
+{"h": "d12882e464466aae", "verdict": "jsDelivr package page for react", "confidence": "high", "mode": "gui", "ocr_text": "react\nReact is a JavaScript library for building user interfaces.\nRequests\n230 990 611\nVersion 19.2.8\nLicense MIT"}
+{"h": "d1568b8ba69dd8d0", "verdict": "world political map", "confidence": "high", "mode": "gui", "ocr_text": "Political Map of the World, February 2021\nRUSSIA\nCANAD\nOCEAN"}
+{"h": "d240ae3b0f48da82", "verdict": "GitHub search page", "confidence": "high", "mode": "gui", "ocr_text": "Filter by\nRepositories\nIssues\nPull requests\nDiscussions\nCommits"}
+{"h": "d292afe098ad0e42", "verdict": "uncertain + best guess: blank white page", "confidence": "low", "mode": "gui", "ocr_text": ""}
+{"h": "d2cfe60dbec47dde", "verdict": "GitHub repository page for torvalds/linux (Linux kernel source tree)", "confidence": "high", "mode": "gui", "ocr_text": "torvalds / linux\nFork 64.3k\nLinux kernel source tree\nRepositories\nIssues\nPull requests"}
+{"h": "d72e2b5af6db23ab", "verdict": "uncertain + best guess: animal", "confidence": "low", "mode": "photo", "ocr_text": "vitroid"}
+{"h": "d73e646066e1012d", "verdict": "uncertain + best guess: outdoor scene", "confidence": "low", "mode": "gui", "ocr_text": "\u5a03\u4f73\u6bd4\u73ed\n05686"}
+{"h": "d8dbd12304d71501", "verdict": "sprite of a toad-like creature", "confidence": "medium", "mode": "photo", "ocr_text": "Brain Toad (no longer used)\nsc-nc-sa"}
+{"h": "db711363a26cbb60", "verdict": "bar chart: Widget Sales 2024", "confidence": "high", "mode": "photo", "ocr_text": "Widget Sales 2024 (units)\nUnits sold\nQ1\nQ2\nQ3\nQ4"}
+{"h": "db8069da1931dd9e", "verdict": "uncertain + best guess: street scene with shopfronts", "confidence": "low", "mode": "photo", "ocr_text": "Riccomini's\nDUST\nEILCINQUE PORES\nwethers"}
+{"h": "dcb82dbce83c9ee8", "verdict": "uncertain + best guess: figure (portrait)", "confidence": "low", "mode": "photo", "ocr_text": "Fernando Sa Rapita\ncc-nc-sa"}
+{"h": "dec54a884dad7b73", "verdict": "terminal window showing htop process monitor", "confidence": "high", "mode": "gui", "ocr_text": "htop - Tasks: 214 thr, 482 kthr; Load average: 0.41 0.38 0.35\nPID\nUSER\nCPU% MEM%\nCommand"}
+{"h": "df4d165ec82843d6", "verdict": "diagram of antenna tuner matching circuits", "confidence": "high", "mode": "gui", "ocr_text": "Fixed link with taps\nHairpin tuner with taps\nSeries cap with taps\nFor low Z lines\nSwinging link with taps"}
+{"h": "dfb030e0e45efd7c", "verdict": "uncertain + best guess: structure with vertical bars", "confidence": "low", "mode": "photo", "ocr_text": ""}
+{"h": "dff40947efd5983f", "verdict": "DataTables documentation page", "confidence": "high", "mode": "gui", "ocr_text": "DataTables\nZero configuration\nBasic Initialisation\nDataTables has most features enabled by default\nconstruction function: new DataTable('#myTable')"}
+{"h": "e1bf2c5807c152ef", "verdict": "uncertain + best guess: animal", "confidence": "low", "mode": "photo", "ocr_text": "Graham e\nS-odhachethin\ncc-sa"}
+{"h": "e1f5ddcb7572fa3d", "verdict": "uncertain + best guess: dark window or screen", "confidence": "low", "mode": "gui", "ocr_text": ""}
+{"h": "e24df1ed32b77249", "verdict": "uncertain + best guess: outdoor scene", "confidence": "low", "mode": "photo", "ocr_text": "8"}
+{"h": "e27b859a14238955", "verdict": "uncertain + best guess: vegetation (tree)", "confidence": "low", "mode": "photo", "ocr_text": "cc-nc-sa"}
+{"h": "e34e91278c2637c0", "verdict": "htmx documentation page", "confidence": "high", "mode": "gui", "ocr_text": "htmx\nhtmx is a library that allows you to access modern browser features directly from HTML\n<a href=\"/blog\">Blog</a>\n<button hx-post=\"/clicked\""}
+{"h": "e534de569159feb2", "verdict": "code editor showing TypeScript source and test files", "confidence": "high", "mode": "gui", "ocr_text": "1 export function renderGui(img: Image, cols = 200) {\n2 const cell = measureCell(img, cols);\nrenderer.ts\ntest_gui.py\ntest_ocr.py"}
+{"h": "e61facf94b248c0e", "verdict": "uncertain + best guess: blank black banner", "confidence": "low", "mode": "gui", "ocr_text": ""}
+{"h": "e64457593f104b67", "verdict": "uncertain + best guess: blank black banner", "confidence": "low", "mode": "gui", "ocr_text": ""}
+{"h": "e74c3cd40f401c2c", "verdict": "uncertain + best guess: animal", "confidence": "low", "mode": "photo", "ocr_text": "UueBKK\ncc-nc-sa"}
+{"h": "e7e79fa51b15844e", "verdict": "uncertain + best guess: outdoor night scene", "confidence": "low", "mode": "photo", "ocr_text": "SeReour\njies84"}
+{"h": "ea9888f6d36371b7", "verdict": "uncertain + best guess: outdoor landscape", "confidence": "low", "mode": "photo", "ocr_text": "Miguel Discart & Kiri Karma\ncc-sa"}
+{"h": "eb6df9fad05db5d7", "verdict": "uncertain + best guess: outdoor scene", "confidence": "low", "mode": "photo", "ocr_text": "no copyright restrictions\nNational Library of Ireland on The Commons"}
+{"h": "eb9cb2700998abf8", "verdict": "React documentation Quick Start page", "confidence": "high", "mode": "gui", "ocr_text": "LEARN REACT\nQuick Start\nWelcome to the React documentation!\nHow to create and nest components"}
+{"h": "ec2042009fb47f16", "verdict": "uncertain + best guess: blank black banner", "confidence": "low", "mode": "gui", "ocr_text": ""}
+{"h": "ed25598802332e73", "verdict": "Microsoft sign in page", "confidence": "high", "mode": "gui", "ocr_text": "Microsoft\nSign in\nUse your Microsoft account.\nEmail or phone number\nNew to Microsoft? Create an account"}
+{"h": "ef90f13a727f325f", "verdict": "bar chart comparing cars and motorcycles by population", "confidence": "high", "mode": "photo", "ocr_text": "Population\nMore cars than motorcycles\nMore motorcycles than cars\n3500\n3000"}
+{"h": "f3660b41fc018c46", "verdict": "uncertain + best guess: animals in a field", "confidence": "low", "mode": "photo", "ocr_text": "HEATHSIDE\nLONDON\ncc-sa"}
+{"h": "f55b809af51eaa36", "verdict": "chart or table about Internet access in Bangladesh", "confidence": "medium", "mode": "gui", "ocr_text": "Internet Access of\nBangladesh\nOK"}
+{"h": "f6c361bac9e800e5", "verdict": "GitHub Explore trending page", "confidence": "high", "mode": "gui", "ocr_text": "Explore\nTrending\nSee what the GitHub community is most excited about today.\nfmtlib / fmt\nA modern formatting library"}
+{"h": "f879a564fba349dc", "verdict": "Zoho sign in page", "confidence": "high", "mode": "gui", "ocr_text": "Try smart sign-in\nSign in\nto access Accounts\nEmail address or mobile number\nDon't have a Zoho account? Sign up now"}
+{"h": "f890c9616671f20f", "verdict": "GitHub issues page for python/cpython", "confidence": "high", "mode": "gui", "ocr_text": "python / cpython\nFork 35.3k\nIssues\nAll issues\nNew issue"}
+{"h": "f8a59443637a87f5", "verdict": "team chat in eval-river channel about eval run", "confidence": "high", "mode": "gui", "ocr_text": "# eval-river\nmina pushed fix/ocr-tile - CI running\nci Build #4822 passed in 3m 41s\npri gui split re-run: mean 0.91 -> 0.93\npri eval tonight 22:00 UTC, don't merge after 21:00"}
+{"h": "f9e69451c567ff95", "verdict": "GitHub commits page for torvalds/linux", "confidence": "high", "mode": "gui", "ocr_text": "torvalds / linux\nFork 64.3k\nCommits\nCommits on Sep 2, 2026\ntorvalds committed 3 hours ago"}
+{"h": "fa8334d24c21b017", "verdict": "uncertain + best guess: animal", "confidence": "low", "mode": "photo", "ocr_text": "Robert Hruzek\ncc-nc-nd"}
+{"h": "fb1593b2997f58bc", "verdict": "grocery receipt table", "confidence": "high", "mode": "photo", "ocr_text": "TABLE: grocery receipt\nName\nQty Price\nApples\n12 $3.60\nBread\n2 $5.00\nTOTAL\n$18.35"}
+{"h": "ff09ba4e0a2cde1d", "verdict": "online forum comment thread", "confidence": "high", "mode": "photo", "ocr_text": "votes\n2 hours ago\nTRIDGE Tony Hawk's Pro Skater 2\nvotes\n1 day ago\n24\nvotes"}
+{"h": "ff8b8859a85c3ce3", "verdict": "flowchart symbols reference table in Indonesian", "confidence": "high", "mode": "gui", "ocr_text": "Tabel Simbol-simbol flowchart program\nKotak Terminal (Terminal Symbol/Terminator)\nKotak Proses (Processing Symbol)\nKotak Keputusan (Decision Symbol)"}

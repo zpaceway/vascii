@@ -189,7 +189,7 @@
 {"file": "gui/gui_dash_echarts_line.png", "category": "gui", "label": "Apache ECharts line chart demo with code editor pane", "source": "https://echarts.apache.org/examples/en/editor.html?c=line-simple"}
 {"file": "gui/gui_dash_grafana_home.png", "category": "gui", "label": "Grafana Play home dashboard with panels", "source": "https://play.grafana.org/d/000000012/grafana-play-home?orgId=1"}
 {"file": "gui/gui_dash_grafana_timeseries.png", "category": "gui", "label": "Grafana Play time-series metrics dashboard with graphs", "source": "https://play.grafana.org/d/000000016/basic-timeseries"}
-{"file": "gui/gui_docs_archwiki.png", "category": "gui", "label": "ArchWiki installation guide dense text page", "source": "https://wiki.archlinux.org/title/Installation_guide"}
+{"file": "gui/gui_docs_archwiki.png", "category": "gui", "label": "Anubis access-block challenge page (stale capture of ArchWiki installation guide URL)", "source": "https://wiki.archlinux.org/title/Installation_guide"}
 {"file": "gui/gui_docs_django.png", "category": "gui", "label": "Django forms docs page with sidebar", "source": "https://docs.djangoproject.com/en/5.0/topics/forms/"}
 {"file": "gui/gui_docs_docker.png", "category": "gui", "label": "Docker Engine install docs page", "source": "https://docs.docker.com/engine/install/"}
 {"file": "gui/gui_docs_git.png", "category": "gui", "label": "Git git-log reference manual page", "source": "https://git-scm.com/docs/git-log"}
@@ -237,7 +237,7 @@
 {"file": "gui/gui_pkg_github_explore.png", "category": "gui", "label": "GitHub Explore collections dashboard", "source": "https://github.com/explore"}
 {"file": "gui/gui_pkg_npm_react.png", "category": "gui", "label": "jsDelivr react package page with install snippet readme and download stats", "source": "https://www.jsdelivr.com/package/npm/react"}
 {"file": "gui/gui_pkg_pypi_requests.png", "category": "gui", "label": "PyPI requests package page with sidebar", "source": "https://pypi.org/project/requests/"}
-{"file": "gui/gui_small_archwiki_crop.png", "category": "gui", "label": "Downscaled center crop of gui_docs_archwiki forcing small-font text", "source": "crop:gui_docs_archwiki.png"}
+{"file": "gui/gui_small_archwiki_crop.png", "category": "gui", "label": "Center crop of Anubis access-block challenge page (crop of gui_docs_archwiki)", "source": "crop:gui_docs_archwiki.png"}
 {"file": "gui/gui_small_chat_crop.png", "category": "gui", "label": "Downscaled center crop of local_chat_slack forcing small-font text", "source": "crop:local_chat_slack.png"}
 {"file": "gui/gui_small_datatables_crop.png", "category": "gui", "label": "Downscaled center crop of gui_table_datatables forcing small-font text", "source": "crop:gui_table_datatables.png"}
 {"file": "gui/gui_small_editor_crop.png", "category": "gui", "label": "Downscaled center crop of local_editor_python forcing small-font text", "source": "crop:local_editor_python.png"}
@@ -256,7 +256,7 @@
 {"file": "gui/gui_table_worldometers.png", "category": "gui", "label": "Worldometers population by country data table", "source": "https://www.worldometers.info/world-population/population-by-country/"}
 {"file": "gui/gui_web_devto.png", "category": "gui", "label": "Dev.to developer feed with article cards", "source": "https://dev.to/"}
 {"file": "gui/gui_web_lobsters.png", "category": "gui", "label": "Lobsters tech link aggregator dense list", "source": "https://lobste.rs/"}
-{"file": "gui/gui_web_reddit.png", "category": "gui", "label": "Old Reddit programming feed dense link list", "source": "https://old.reddit.com/r/programming/"}
+{"file": "gui/gui_web_reddit.png", "category": "gui", "label": "Network-block challenge page (stale capture of old Reddit programming feed URL)", "source": "https://old.reddit.com/r/programming/"}
 {"file": "gui/gui_web_tildes.png", "category": "gui", "label": "Tildes link aggregator front page with dense topics votes and comments", "source": "https://tildes.net/"}
 {"file": "gui/local_calendar.png", "category": "gui", "label": "Month calendar grid with dense event labels", "source": "local-render"}
 {"file": "gui/local_chat_slack.png", "category": "gui", "label": "Team chat app with channel sidebar dense timestamped messages", "source": "local-render"}

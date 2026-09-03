@@ -1,4 +1,6 @@
 *.pyc
-
 /.omo
 /.opencode
+__pycache__/
+eval/blind/inputs/
+eval/blind/*.sealed

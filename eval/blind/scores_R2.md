@@ -1,0 +1,312 @@
+# Blind re-test scores
+
+Headline (photos+gui, ex-stale): **110/190 = 57.9%** Wilson 95% CI [0.508, 0.647]
+Inclusive (photos+gui, with stale): 111/191 = 58.1%
+
+## Per-category (fresh / all)
+
+- photo: fresh 13/90 = 14.4% [0.086, 0.232]
+- gui: fresh 97/100 = 97.0% [0.915, 0.990]
+  all: 98/101 = 97.0%
+- diagram: fresh 45/89 = 50.6% [0.404, 0.607]
+
+## Exclusions
+
+- stale captures excluded from headline: 1 (1 would-be-correct)
+  - 46a07a7671bf5d06 [gui] correct=True basis=token:cloud
+- fixture/unknown prediction hashes (never in headline): 0
+- missing predictions (scored incorrect): 0
+
+## Re-test comparison vs 44/96 baseline
+
+- baseline: 44/96 = 45.8% Wilson 95% CI [0.362, 0.558]
+- blind: 110/190 = 57.9% [0.508, 0.647]
+- delta vs 0.458: +12.1pp
+- two-proportion z = +1.932, two-sided p = 0.05334 (alpha 0.05, not significant)
+- Wilson non-overlap sanity: blind CI lower 0.508 strictly above 0.458
+- bar check: ~56/96 (58%) clears p<0.05 against 44/96 with n~=96/arm
+- trusted (CI above 0.458 AND p<0.05, under tester protocol): NO
+- never compare against the 227/281 = 80.8% mixed-methodology composite (Wilson [0.758, 0.850]); different, leakier measurement.
+
+## Per-row justifications (non-map matches use exact-token basis)
+
+- 00891895a6e0aac3 [gui] correct=True basis=token:django
+- 008ff56bfcc7b99e [photo] correct=False basis=no-match
+- 01a43728bf8f92cf [photo] correct=False basis=no-match
+- 01c8a192a4e928d4 [photo] correct=False basis=no-match
+- 03bdf0ca7b72d2c8 [photo] correct=False basis=no-match
+- 03d571693111d2de [gui] correct=True basis=token:inbox
+- 04166b89d098c254 [photo] correct=False basis=no-match
+- 04b1334cee3e5db4 [gui] correct=True basis=token:text
+- 0579c2f6feecda42 [diagram] correct=False basis=no-match
+- 0617098f346478e3 [diagram] correct=False basis=no-entity+no-text
+- 07a72d16a41459e4 [diagram] correct=False basis=no-match
+- 07df08299dafaf7e [photo] correct=False basis=no-match
+- 08ff2116d1ee63bd [photo] correct=False basis=no-match
+- 090ea595cc69679c [photo] correct=False basis=no-match
+- 098ade769df035b6 [gui] correct=True basis=alias:htop
+- 099cb4cfe090eaf8 [gui] correct=True basis=token:typescript
+- 09e45136301ab534 [diagram] correct=False basis=no-entity+no-text
+- 0a5baec5172dde89 [gui] correct=True basis=token:kubernet
+- 0b3d23fbf756ee06 [photo] correct=False basis=no-match
+- 0c5890f04992736e [photo] correct=False basis=no-match
+- 0d41a253cd5a0c1c [diagram] correct=True basis=token:cats+ocr-text:cats
+- 0d56d96e0f47da88 [photo] correct=False basis=no-match
+- 0ec695647dc876cf [photo] correct=False basis=no-match
+- 0f47dfbb466f93db [diagram] correct=False basis=no-entity+no-text
+- 110bfc2f7f0dccd1 [gui] correct=True basis=token:login
+- 1167bdaab4cb9dc9 [gui] correct=True basis=alias:gmail
+- 11f67d8d01d7af66 [gui] correct=True basis=token:wikipedia
+- 1203ddc416a38673 [gui] correct=True basis=token:code
+- 121f2ded6036bbee [photo] correct=False basis=no-match
+- 12ce4ec544b071ce [gui] correct=True basis=token:block
+- 13b0353a706c26f5 [photo] correct=False basis=no-match
+- 14c6917f0d1eacc0 [gui] correct=True basis=token:aggregator
+- 177311d8a58a5e18 [gui] correct=True basis=token:docs
+- 1810020624a0d8ba [gui] correct=True basis=token:grafana
+- 1916703eb82029f8 [photo] correct=False basis=no-match
+- 19449d40b8533468 [diagram] correct=False basis=no-match
+- 1e4a9861d9b7afa2 [photo] correct=False basis=no-match
+- 1e74f837e8993567 [photo] correct=False basis=no-match
+- 1fbc1ee6f98d3437 [gui] correct=True basis=token:bitbucket
+- 2029a11af8f16180 [gui] correct=False basis=no-match
+- 21a084dd7c86a478 [gui] correct=True basis=token:rust
+- 227ce8be334ffd57 [gui] correct=True basis=token:twilio
+- 23191ff7bb0358df [diagram] correct=False basis=no-match
+- 2320a273680619bf [diagram] correct=True basis=token:code+ocr-text:code
+- 238e49e2a9e01290 [diagram] correct=False basis=no-entity+no-text
+- 24680e5e9e9d85ab [photo] correct=False basis=no-match
+- 26cd087071dbbd20 [diagram] correct=True basis=token:cost+ocr-text:cost
+- 26e7e0a8aec34dad [gui] correct=True basis=token:dashboard
+- 2964a96c1a8d41c7 [gui] correct=True basis=token:install
+- 296cc8b5d9e89b09 [photo] correct=True basis=token:crab
+- 29d1378ded1704c8 [diagram] correct=False basis=no-entity+no-text
+- 2a4ec0fd2a8fee6b [gui] correct=True basis=token:yahoo
+- 2a76c9ffc3d82b7e [diagram] correct=False basis=no-match
+- 2aa5366cf547986f [diagram] correct=True basis=token:architecture+ocr-text:architecture
+- 2bffed9ba35f875c [photo] correct=False basis=no-match
+- 2c5f9fd5ce8d46e4 [gui] correct=False basis=no-match
+- 2cd2d30a53f9261c [photo] correct=False basis=no-match
+- 2cdcaf7e615ec623 [diagram] correct=False basis=no-entity+no-text
+- 2d3ff4300e6c48c3 [photo] correct=False basis=no-match
+- 2e151ff198a03b17 [photo] correct=False basis=no-match
+- 2ea6ae6fe29810d4 [diagram] correct=True basis=token:energy+ocr-text:energy
+- 305a19b92fc75519 [gui] correct=True basis=token:chart
+- 340c6d2e5ca512da [photo] correct=False basis=no-match
+- 34280d78f1b6ed4b [gui] correct=True basis=token:install
+- 34b308de82f93f83 [photo] correct=False basis=no-match
+- 34dedd47d94642b2 [diagram] correct=True basis=token:plan+ocr-text:plan
+- 36aa4a1737277e16 [diagram] correct=False basis=no-match
+- 38ba29efb9831bec [diagram] correct=False basis=no-entity+no-text
+- 38e569149bc1fed0 [diagram] correct=True basis=token:flowchart+ocr-text:flowchart
+- 3cae69d759cba62b [diagram] correct=False basis=no-entity+no-text
+- 3d719e9f3c37d167 [diagram] correct=False basis=no-entity+no-text
+- 3d73c4f0dd59ac82 [gui] correct=True basis=alias:slack
+- 3ea42f7cd9ec9230 [diagram] correct=False basis=no-entity+no-text
+- 3ed7be97279a7a29 [diagram] correct=False basis=no-match
+- 3f53c5550c7b8b1a [photo] correct=False basis=no-match
+- 41177368b6fc4934 [diagram] correct=False basis=token:database+no-text
+- 428f15fd212f50af [gui] correct=True basis=token:email
+- 43d95ce7e663f320 [photo] correct=False basis=no-match
+- 4452e234c374fa83 [diagram] correct=False basis=no-entity+no-text
+- 45d2b6e7543040a5 [diagram] correct=False basis=no-match
+- 46a07a7671bf5d06 [gui] STALE correct=True basis=token:cloud
+- 46faee5a9fef839d [diagram] correct=False basis=no-entity+no-text
+- 49f941457ae3743d [gui] correct=True basis=token:overflow
+- 4b7ed3f85e19d3f1 [gui] correct=True basis=token:github
+- 4ba4018acd01616c [gui] correct=True basis=token:cpython
+- 4ba64364672b5a46 [photo] correct=False basis=no-match
+- 4bb58b97ca6b0256 [photo] correct=False basis=no-match
+- 4cf6de1af8c8f5fe [diagram] correct=True basis=token:height+ocr-text:cm
+- 4d64462f030406eb [gui] correct=True basis=token:datatabl
+- 4f1d9d99c48896fd [gui] correct=True basis=alias:syslog
+- 4f2e44c144ca5c29 [photo] correct=False basis=no-match
+- 4fa8eca444122862 [gui] correct=True basis=token:apache
+- 50efc7e3a38c621b [gui] correct=True basis=token:docs
+- 50ffdaf97daa2556 [photo] correct=False basis=no-match
+- 51b779b30838b1e4 [photo] correct=False basis=no-match
+- 528d7100ea791abd [diagram] correct=True basis=token:circuit+ocr-text:for
+- 529987d346911e9f [diagram] correct=True basis=token:done+ocr-text:done
+- 52d44d22e02bea4b [gui] correct=True basis=token:account
+- 52d4d6dc4d53e94d [diagram] correct=True basis=token:2021+ocr-text:2021
+- 532441124991c7bc [gui] correct=True basis=token:country
+- 54b450fd7f2d293b [gui] correct=True basis=token:docs
+- 54be3ae28218ce94 [photo] correct=False basis=no-match
+- 5b794fbcdda5329b [diagram] correct=True basis=token:auth+ocr-text:auth
+- 5ceafb84bcf60314 [gui] correct=True basis=token:access
+- 5d100696cf130e42 [diagram] correct=True basis=token:chart+ocr-text:daily
+- 5d652825b2a86016 [gui] correct=True basis=alias:gmail
+- 5f2fe029821c7676 [diagram] correct=True basis=token:flowchart+ocr-text:flowchart
+- 60871b18db7b7b9f [gui] correct=True basis=token:build
+- 609a866e2cbf5484 [gui] correct=True basis=token:postgresql
+- 60e597fe8d85bcaa [gui] correct=True basis=token:github
+- 6165ddab07cd7c70 [diagram] correct=False basis=no-entity+no-text
+- 61aa137a1180d00b [photo] correct=False basis=no-match
+- 61acde952c45d256 [photo] correct=False basis=no-match
+- 61d62f3fa8712831 [gui] correct=True basis=token:overflow
+- 63814a4a24186b87 [diagram] correct=True basis=token:2024+ocr-text:2024
+- 64129ca11699efca [photo] correct=False basis=no-match
+- 64eb58952de8404a [diagram] correct=False basis=no-entity+no-text
+- 658e62bbf8480a38 [photo] correct=False basis=no-match
+- 6590090e0aa39ba9 [diagram] correct=False basis=no-entity+no-text
+- 66e2b89850a5dd98 [photo] correct=False basis=no-match
+- 6814575688279645 [gui] correct=True basis=token:file
+- 686464a245db02a0 [diagram] correct=False basis=no-match
+- 68f075f7df606563 [gui] correct=True basis=token:text
+- 6a73a389214307a8 [photo] correct=False basis=no-match
+- 6c50a197e470b644 [diagram] correct=False basis=no-entity+no-text
+- 6c51ad6aa07f70d8 [gui] correct=True basis=alias:mdn
+- 6d731f3e6be5d0ca [diagram] correct=True basis=token:check+ocr-text:check
+- 6e0831fdb4ced6ff [diagram] correct=False basis=token:factorization+no-text
+- 6e1f59b5112bca17 [diagram] correct=True basis=token:class+ocr-text:iterator
+- 6e2c18a40f098edd [gui] correct=True basis=token:aggregator
+- 6f523dfb91bfe5af [photo] correct=False basis=no-match
+- 70d310235ebad380 [photo] correct=False basis=no-match
+- 713e68b3365baeff [gui] correct=True basis=token:github
+- 75f9fbc16ed57009 [gui] correct=True basis=token:docs
+- 772570e051cede14 [photo] correct=False basis=no-match
+- 77985dfd86a4affa [gui] correct=True basis=token:active
+- 788cbd863eac6a0f [diagram] correct=True basis=token:analysi+ocr-text:analysi
+- 78e0a6d737a1bda0 [photo] correct=False basis=no-match
+- 792aeb2758988b1c [photo] correct=True basis=token:crowd
+- 794e5836cb2685a6 [diagram] correct=False basis=token:architecture+no-text
+- 79a1da8227b1ff98 [gui] correct=True basis=token:explore
+- 7a4335b4f21c7003 [gui] correct=True basis=token:answer
+- 7c045d382d6ca018 [diagram] correct=True basis=token:2024+ocr-text:2024
+- 7c63db7172611498 [photo] correct=True basis=hypernym:waterscape
+- 7d4b5d824526faf1 [gui] correct=True basis=token:datatabl
+- 81a67b281cb352b9 [photo] correct=False basis=no-match
+- 849551cc4fda3ac8 [gui] correct=True basis=token:notification
+- 86b003ce53380888 [diagram] correct=True basis=token:sprite
+- 89a7f3069fb42c04 [diagram] correct=True basis=token:sprite
+- 89defef06cde3e9b [photo] correct=False basis=no-match
+- 8c04b62375269759 [photo] correct=False basis=no-match
+- 8c6b2f44497dda6f [gui] correct=True basis=token:email
+- 8e03a4fef0d11101 [photo] correct=False basis=no-match
+- 8f1c7175b457eafe [photo] correct=True basis=token:university
+- 8f6b7aa582d62a76 [gui] correct=True basis=token:learn
+- 9042423bdf8f497a [photo] correct=False basis=no-match
+- 9076c30e19946ffd [photo] correct=False basis=no-match
+- 90e14c4d8a6e817c [diagram] correct=False basis=token:schematic+no-text
+- 92bf6923b5e08ebd [diagram] correct=True basis=token:arbuckl+ocr-text:arbuckl
+- 93bdad11d4f484b4 [diagram] correct=False basis=no-entity+no-text
+- 93d3e872a490a230 [photo] correct=False basis=no-match
+- 945d9f8e2a37becc [gui] correct=True basis=token:dock
+- 94c6942cd3d370a8 [diagram] correct=True basis=token:build+ocr-text:214
+- 956edf5403f35b9a [gui] correct=True basis=token:github
+- 969bdcef2521f5d7 [diagram] correct=False basis=token:account+no-text
+- 9753f4121fd61841 [diagram] correct=True basis=token:appl+ocr-text:appl
+- 97e1b8b0ec760893 [diagram] correct=True basis=token:sprite
+- 995061d01055a867 [gui] correct=True basis=token:account
+- 998cc6165f4b8a09 [gui] correct=True basis=token:github
+- 9bbfeb56504569af [gui] correct=True basis=token:extension
+- 9c1ba34d1d9e696b [diagram] correct=True basis=token:sprite
+- 9e08ca76690edd17 [diagram] correct=True basis=token:sprite
+- 9ede0128cc9e5df6 [gui] correct=True basis=token:file
+- 9eff0dd630adc99d [gui] correct=True basis=token:code
+- 9f176f6d1ab3fab3 [gui] correct=True basis=alias:slack
+- 9f7c97480b5329c7 [diagram] correct=False basis=token:system+no-text
+- 9fbcf7a5afc98490 [gui] correct=True basis=alias:diff
+- a00abf245fbb3c57 [diagram] correct=True basis=token:authoriz+ocr-text:authoriz
+- a05011f837fa3b5b [photo] correct=True basis=hypernym:waterscape
+- a085f9f2e635faed [gui] correct=True basis=alias:syslog
+- a27348aae1847974 [gui] correct=True basis=token:cent
+- a29fd991714a1ab6 [gui] correct=True basis=alias:diff
+- a2eda32bc701e947 [photo] correct=True basis=hypernym:figure subject
+- a47b6e6508d7bed9 [gui] correct=True basis=token:code
+- a5826d3eb98595b2 [diagram] correct=True basis=token:network+ocr-text:network
+- a6d4bd9ec37cc6a7 [photo] correct=False basis=no-match
+- a6f9a76f1eb1d3c7 [photo] correct=True basis=token:night
+- a7ec749f49a2e7de [diagram] correct=False basis=no-entity+no-text
+- a817052697430cca [photo] correct=True basis=hypernym:waterscape
+- a870c8a0091e73e8 [photo] correct=True basis=token:green
+- aab29d4cde448cc1 [gui] correct=True basis=token:layout
+- abddfae4aa6cf029 [photo] correct=True basis=token:ground
+- ad2c3b357c85dc10 [diagram] correct=False basis=no-entity+no-text
+- aec6aaebfe987047 [diagram] correct=False basis=no-entity+no-text
+- b06e09cf27151647 [diagram] correct=False basis=no-entity+no-text
+- b17b9d18abf2d499 [gui] correct=True basis=token:guide
+- b3b30738f93aaacd [gui] correct=True basis=token:codeberg
+- b6571a141a6c6ddd [photo] correct=False basis=no-match
+- b65b47afe6dade02 [gui] correct=True basis=alias:diff
+- b6e9109bc30680e8 [photo] correct=False basis=no-match
+- b762f1091b041794 [photo] correct=False basis=no-match
+- b8b3c9e8cac213c1 [photo] correct=False basis=no-match
+- b92c94e1bcf9ee67 [photo] correct=False basis=no-match
+- ba0fc566e10d0310 [photo] correct=True basis=token:bright
+- bc8cb813520398e9 [gui] correct=True basis=token:fleet
+- bda3f8449155427a [diagram] correct=True basis=token:dataspace+ocr-text:dataspace
+- bf288f70c10628cb [diagram] correct=True basis=token:sprite
+- c0f235d105ebfe41 [photo] correct=True basis=token:blue
+- c1005d63f18859b6 [photo] correct=False basis=no-match
+- c107ba277bd3cb7f [gui] correct=True basis=token:github
+- c11cdc016d712d56 [gui] correct=True basis=token:cent
+- c12bade43317f158 [diagram] correct=True basis=token:both+ocr-text:5pm
+- c47477d9084ef0c0 [photo] correct=False basis=no-match
+- c4faddbf3dfa6053 [diagram] correct=True basis=token:cars+ocr-text:cars
+- c5d937c37aad89ad [photo] correct=False basis=no-match
+- c672e56de51ba61f [photo] correct=False basis=no-match
+- c6d5e1f5caf08fa2 [diagram] correct=False basis=no-entity+no-text
+- c6d70a98bae4364e [diagram] correct=True basis=token:percent+ocr-text:60
+- c6f0e82f7552aac5 [photo] correct=False basis=no-match
+- c7832630c5e036b3 [gui] correct=True basis=token:docs
+- c8fb7eadaa5edee2 [gui] correct=True basis=token:build
+- c9c87f9dca7d197a [diagram] correct=True basis=token:energy+ocr-text:dec
+- cb9d65fe0494dace [gui] correct=True basis=alias:syslog
+- cd23612b65f2b5ac [gui] correct=True basis=token:amount
+- cd6b6a223e3542f6 [photo] correct=False basis=no-match
+- cd7e3677f5a30245 [gui] correct=True basis=token:dock
+- cd97d6cf69b4ac6b [photo] correct=False basis=no-match
+- ce65a8ca1aefad7e [photo] correct=False basis=no-match
+- cea1dba069a37615 [gui] correct=True basis=token:cent
+- cfd7f6073c9b2631 [gui] correct=True basis=alias:diff
+- d02823c5aca1d9fe [gui] correct=True basis=token:github
+- d0df8730365dfbe9 [gui] correct=True basis=token:microsoft
+- d1c7836903f43bff [gui] correct=True basis=token:share
+- d1dba928bbacb79c [gui] correct=True basis=token:account
+- d1ec0f5c6aefec86 [photo] correct=False basis=no-match
+- d340c0dd45cd85f9 [diagram] correct=True basis=token:acme+ocr-text:acme
+- d35fba8276316927 [diagram] correct=True basis=token:2024+ocr-text:2024
+- d39bc7bf60afa354 [gui] correct=True basis=token:guide
+- d4a14566dc403363 [gui] correct=True basis=token:python
+- d5208607395919ad [photo] correct=False basis=no-match
+- d761b0e1acdc8633 [gui] correct=True basis=token:wikipedia
+- d85059c37b9b9931 [photo] correct=False basis=no-match
+- d9342d097beef9b4 [gui] correct=True basis=alias:slack
+- d9ffac878e12b707 [diagram] correct=True basis=token:done+ocr-text:by
+- da0139b66c56b35a [gui] correct=True basis=token:fastmail
+- ddb49bf2b646641d [diagram] correct=False basis=no-entity+no-text
+- ddc3808d61d8a607 [gui] correct=True basis=token:access
+- def3f5da533ae885 [diagram] correct=False basis=no-match
+- dfb1436e4ac1eecc [diagram] correct=True basis=token:input+ocr-text:input
+- e0b53c8cf05bb8cd [gui] correct=False basis=no-match
+- e19b95669e8aad1f [photo] correct=False basis=no-match
+- e2461d6666d16905 [gui] correct=True basis=token:article
+- e2d4e9130dd480b3 [diagram] correct=True basis=token:distribution+ocr-text:75
+- e44c03ddcf5a3fb6 [diagram] correct=False basis=no-match
+- e482eb26ac01e23e [diagram] correct=False basis=no-entity+no-text
+- e4fe15fc5ca42f38 [photo] correct=False basis=no-match
+- ea7eb9d647712df9 [photo] correct=False basis=no-match
+- eadccc5c8fa206b4 [gui] correct=True basis=alias:gmail
+- ec95c3933058bc7d [photo] correct=False basis=no-match
+- eccfe4dc92556515 [diagram] correct=False basis=no-entity+no-text
+- ee880c41f4619dd5 [diagram] correct=True basis=token:2024+ocr-text:00
+- ef3c496845030228 [diagram] correct=True basis=token:2020+ocr-text:1m
+- ef57b5cfc3bc2bd3 [photo] correct=False basis=no-match
+- f24601fe716ce302 [photo] correct=False basis=no-match
+- f262e9beb9644ac1 [diagram] correct=True basis=token:2024+ocr-text:150
+- f3771a70a9a14804 [photo] correct=False basis=no-match
+- f3a81f86ab8a03ef [gui] correct=True basis=token:code
+- f4a557ad7298461b [photo] correct=False basis=no-match
+- f5060ae7466bb7d8 [diagram] correct=True basis=token:clean+ocr-text:clean
+- f67e80892cc2d7bc [diagram] correct=False basis=no-match
+- f6fba9a850e0fd40 [diagram] correct=False basis=no-entity+no-text
+- f788620a6f4e16ba [photo] correct=True basis=token:ambulance
+- f9b8f13884f7c917 [gui] correct=True basis=alias:mdn
+- f9f59698740d5dc9 [diagram] correct=True basis=token:average+ocr-text:average
+- f9fc6e64a9f074c4 [gui] correct=True basis=token:package
+- fa5c3bf9da096a42 [gui] correct=True basis=token:torvald
+- fdcb37b062f75830 [photo] correct=False basis=no-match
+- fed4bad4668c4370 [gui] correct=True basis=alias:calendar
+- ff33dccdd3ca843f [photo] correct=False basis=no-match
+- ff8beb48a426882a [photo] correct=False basis=no-match
