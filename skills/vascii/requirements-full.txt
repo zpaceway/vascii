@@ -1,0 +1,11 @@
+# Full flavor: local zero-shot embedding branch (MobileCLIP-S2, 380MB weights).
+# Light flavor (requirements.txt) stays dependency-free of torch.
+# Weights: pre-fetch once with network, then run offline (HF_HUB_OFFLINE=1).
+# Pinned by eval benchmark; weight sha256 recorded in scripts/embed.py header.
+open_clip_torch==3.3.0
+torch==2.14.0+cpu
+torchvision==0.29.0+cpu
+timm==1.0.29
+huggingface_hub==1.29.0
+safetensors==0.8.0
+tokenizers==0.23.1

@@ -42,6 +42,17 @@ python3 -m pip install -r requirements.txt
   system-package note (Debian/Ubuntu `apt`, macOS `brew`, Windows
   `winget`); everything else is plain `pip`.
 
+## Flavors (light vs full)
+
+- Light flavor (`requirements.txt`): ASCII + OCR + metadata + inverse
+  branches. No torch, no model weights beyond the OCR cache.
+- Full flavor (`requirements-full.txt`): adds the Embedding branch
+  (MobileCLIP-S2, ~380 MB weights, pinned versions plus weight hash in
+  `scripts/embed.py`). Pre-fetch weights once with network present, then
+  run with `HF_HUB_OFFLINE=1`; missing cache exits 3 with the remedy,
+  never downloads. Photo blind accuracy more than doubles (9/90 to
+  23/90); GUI holds at 94%.
+
 ## Pipeline
 
 1. Render ASCII (`photo | gui | auto`), OCR the original pixels, and read
@@ -107,6 +118,31 @@ Do not skip ahead: each step constrains the next.
 Rules: describe only glyphs you can point to by row/col. Mark anything
 you cannot anchor as `absent`, never as implied. Silhouette-level masses
 only — no facial expressions, logos, or small text from ASCII alone.
+
+### Embedding branch (photo mode only)
+
+Photo mode adds a fourth Wave-1 branch alongside `img2ascii`, `ocr`,
+and `meta`, run in parallel with them:
+
+- Run `python3 scripts/embed.py <image-file>` on the original pixels
+  → one JSON object with deterministic top-3 `{bucket, score}` plus
+  `margin` (top-1 minus top-2 cosine gap, frozen MobileCLIP-S2
+  weights). Same input bytes always give byte-identical output; the
+  call is fully offline (weights must be pre-fetched into the engine
+  cache — exit 3 prints the exact remedy) and costs ~0.06 s/image CPU.
+- Token discipline: quote at most the top-3 buckets with scores in
+  the notes. Never dump the full 12-bucket ranking.
+- Join: the embedding top-1 bucket joins as first-class evidence next
+  to the ASCII masses. A top-1 that names the same subject as the
+  pattern verdict counts toward `agree`; one that contradicts it
+  counts toward `conflict`, under the existing agreement rule.
+  Embedding alone never yields `high`: with ASCII absent or
+  unreadable, cap confidence at `medium`.
+- Margin abstain: when `margin` is below 0.02 the branch abstains —
+  record `embedding: absent (margin < 0.02)` and fall back to prior
+  behavior, with confidence lowered per the absent-section rule.
+- Non-photo modes: skip this branch and record `embedding: absent
+  (non-photo mode)`. It fires only when the mode is `photo`.
 
 ## Barrier join with proceed-with-gaps
 
