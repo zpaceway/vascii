@@ -1,6 +1,6 @@
 # blind-input snapshot: sha256 of sources pre-copy
 # conversion: all inputs normalized to RGB PNG, EXIF/XMP stripped
-# salt: 'retest1'
+# salt: 'r3'
 84654333104587f600da69a0cf8b018b9e5ba72af68b8febac18220a2578c1b1  eval/dataset/manifest.jsonl
 f771fd2bdfaf76269827457ad0e144de2bd8781e580b5a1d4c5122bfdd19c33e  photos/photo_001.jpg
 171d3096aea73ac11c5d347d757c30afe594646e763b915c6eb1863e4039fcf7  photos/photo_002.jpg

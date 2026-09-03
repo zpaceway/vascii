@@ -87,3 +87,12 @@ The skill SHALL provide a `check` command that detects present versus missing de
 
 - **WHEN** the OCR runtime is absent on a supported platform
 - **THEN** the check output names the missing package and prints the exact install command for that OS
+
+### Requirement: Diagram verdict quotes salient text
+
+The skill SHALL require verdicts on text-bearing diagram images to quote at least one OCR span, with the entity named from layout vocabulary.
+
+#### Scenario: Chart verdict carries its title
+
+- **WHEN** OCR recovered on-figure text such as a chart title
+- **THEN** the verdict contains the entity plus the quoted span
